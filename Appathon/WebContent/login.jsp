@@ -33,7 +33,7 @@
 					String fullName = rs.getString("fullName");
 					Date birthday = rs.getDate("birthday");
 					if (dbPassword.equals(password)) {
-						User user = new User(username, dbPassword, fullName, birthday);
+						User user = new User(username, fullName, dbPassword, birthday);
 						session.setAttribute("user", user);
 						response.sendRedirect("/Appathon/myhomepage");
 					} else {						

@@ -1,17 +1,28 @@
 @charset "UTF-8";
 
+body {
+	margin: 0;
+	font-family: cursive;
+}
+
 h1 {
 	text-align: center;
 }
 
-form {
+form, .card {
 	width: 300px;
 	margin: 100px auto;
 	padding: 30px;
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
-.form-field {
+.card-title {
+	margin-top: 0;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.form-field, .card-field {
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -36,8 +47,8 @@ form {
 	color: red;
 }
 
-.form-action {
-	margin: 40px auto 0;
+.form-action, .card-action {
+	margin: 40px 0 0;
 }
 
 .form-action input {
