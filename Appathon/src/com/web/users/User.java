@@ -1,6 +1,6 @@
 package com.web.users;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class User {
 	private String username;
@@ -8,7 +8,7 @@ public class User {
 	private Date birthday;
 	private String password;
 
-	public User(int id, String username, String fullName, String password, Date birthday) {
+	public User(String username, String fullName, String password, Date birthday) {
 		this.username = username;
 		this.fullName = fullName;
 		this.password = password;
