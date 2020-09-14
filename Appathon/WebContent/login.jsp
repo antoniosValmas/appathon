@@ -5,7 +5,6 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link href="./styles/login.css" rel="stylesheet" type="text/css">
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
 <title>Appathon - Login</title>
 <%
@@ -27,7 +26,7 @@
 
 				if (!rs.next()) {
 					session.setAttribute("username", username);
-					response.sendRedirect("/Appathon/register");
+					response.sendRedirect("/Appathon/newuser");
 				} else {
 					// Only one row expected because we searched by the primary key
 					String dbPassword = rs.getString("password");

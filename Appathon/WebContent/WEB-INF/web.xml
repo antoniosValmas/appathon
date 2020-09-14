@@ -8,16 +8,16 @@
 		<welcome-file>login.jsp</welcome-file>
 	</welcome-file-list>
 	<servlet>
-		<servlet-name>newUser</servlet-name>
-		<jsp-file>/newUser.jsp</jsp-file>
+		<servlet-name>newuser</servlet-name>
+		<jsp-file>/newuser.jsp</jsp-file>
 	</servlet>
 	<servlet>
 		<servlet-name>homepage</servlet-name>
 		<jsp-file>/homepage.jsp</jsp-file>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>newUser</servlet-name>
-		<url-pattern>/newUser</url-pattern>
+		<servlet-name>newuser</servlet-name>
+		<url-pattern>/newuser</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>homepage</servlet-name>
