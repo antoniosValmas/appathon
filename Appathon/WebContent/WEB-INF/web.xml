@@ -15,6 +15,10 @@
 		<servlet-name>homepage</servlet-name>
 		<jsp-file>/homepage.jsp</jsp-file>
 	</servlet>
+	<servlet>
+		<servlet-name>pageupdate</servlet-name>
+		<jsp-file>/pageupdate.jsp</jsp-file>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>newuser</servlet-name>
 		<url-pattern>/newuser</url-pattern>
@@ -22,5 +26,9 @@
 	<servlet-mapping>
 		<servlet-name>homepage</servlet-name>
 		<url-pattern>/myhomepage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>pageupdate</servlet-name>
+		<url-pattern>/pageupdate</url-pattern>
 	</servlet-mapping>
 </web-app>

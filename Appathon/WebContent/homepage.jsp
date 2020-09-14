@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="com.web.users.User"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -5,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Appathon - Homepage</title>
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
 <link href="./styles/menu.css" rel="stylesheet" type="text/css">
 </head>
@@ -18,7 +19,7 @@
 	%>
 	<div class="menu">
 		<div class="site-navigation">
-			<a href="/Appathon/homepage" class="active">HomePage</a>
+			<a href="/Appathon/myhomepage" class="active">HomePage</a>
 			<a href="/Appathon/products">Products</a>
 		</div>
 		<div class="user-navigation">
@@ -35,7 +36,7 @@
 		</div>
 		<div class="card-field">
 			<div>Birthday:</div>
-			<div><%= user.getBirthday() %></div>
+			<div><%= new SimpleDateFormat("yyyy-MM-dd").format(user.getBirthday()) %></div>
 		</div>
 		<div class="card-action">
 			<a href="/Appathon/pageupdate">Edit profile</a>
