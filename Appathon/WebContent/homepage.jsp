@@ -9,6 +9,7 @@
 <title>Appathon - Homepage</title>
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
 <link href="./styles/menu.css" rel="stylesheet" type="text/css">
+<link href="./styles/homepage.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<% 
@@ -42,7 +43,14 @@
 			<a href="/Appathon/pageupdate">Edit profile</a>
 		</div>
 	</div>
-	<%
+	<% 
+			if (user.getUsername().equals("admin")) { 
+				%> 
+					<div class="admin-action">
+						<a href="/Appathon/import-products">Import Products</a>
+					</div>
+				<%
+			}
 		}
 	%>
 </body>

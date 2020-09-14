@@ -40,6 +40,7 @@
 					);
 					Date birthdayDate = new SimpleDateFormat("yyyy-MM-dd").parse(birthday);
 					User user = new User(username, fullName, password, birthdayDate);
+					session.setAttribute("user", user);
 					response.sendRedirect("/Appathon/myhomepage");					
 				}
 				

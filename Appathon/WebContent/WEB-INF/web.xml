@@ -23,6 +23,11 @@
 		<servlet-name>logout</servlet-name>
 		<jsp-file>/logout.jsp</jsp-file>
 	</servlet>
+	<servlet>
+		<servlet-name>import-products</servlet-name>
+		<jsp-file>/import-products.jsp</jsp-file>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>newuser</servlet-name>
 		<url-pattern>/newuser</url-pattern>
@@ -38,5 +43,9 @@
 	<servlet-mapping>
 		<servlet-name>logout</servlet-name>
 		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>import-products</servlet-name>
+		<url-pattern>/import-products</url-pattern>
 	</servlet-mapping>
 </web-app>
