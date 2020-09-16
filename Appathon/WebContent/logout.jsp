@@ -9,6 +9,7 @@
 <body>
 	<%
 		session.removeAttribute("user");
+		session.removeAttribute("cart");
 		response.sendRedirect("/Appathon/");
 	%>
 </body>

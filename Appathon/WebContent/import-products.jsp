@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Appathon - Import products</title>
 <%
 	Connection conn = DBService.getConnection();
 %>

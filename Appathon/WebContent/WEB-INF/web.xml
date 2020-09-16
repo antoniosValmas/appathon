@@ -27,6 +27,10 @@
 		<servlet-name>import-products</servlet-name>
 		<jsp-file>/import-products.jsp</jsp-file>
 	</servlet>
+	<servlet>
+		<servlet-name>products</servlet-name>
+		<jsp-file>/products.jsp</jsp-file>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>newuser</servlet-name>
@@ -47,5 +51,9 @@
 	<servlet-mapping>
 		<servlet-name>import-products</servlet-name>
 		<url-pattern>/import-products</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>products</servlet-name>
+		<url-pattern>/products</url-pattern>
 	</servlet-mapping>
 </web-app>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.products-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.price div {
+	width: 100%;
+	text-align: right;
+}
+
+.price small {
+	visibility: hidden;
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+
+.price:hover small {
+	visibility: visible;
+}
+
+.card {
+	margin: 40px auto;
+}
