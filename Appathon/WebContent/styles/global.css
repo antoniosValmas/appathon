@@ -5,7 +5,7 @@ body {
 	font-family: cursive;
 }
 
-h1 {
+h1, h2 {
 	text-align: center;
 }
 
@@ -45,7 +45,9 @@ form, .card {
 	flex-direction: column;
 }
 
-.form-field input {
+.form-field input,
+.card-field select,
+.card-field input {
 	width: 200px;
 	padding: 5px;
 }

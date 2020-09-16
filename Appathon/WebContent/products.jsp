@@ -38,8 +38,7 @@
 	<%
 		if (session.getAttribute("user") == null) {
 			response.sendRedirect("/Appathon/");
-		} else {
-			System.out.println(session.getAttribute("cart"));
+		} else {;
 			User user = (User) session.getAttribute("user");
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM products");
@@ -50,7 +49,8 @@
 				href="/Appathon/products" class="active">Products</a>
 		</div>
 		<div class="user-navigation">
-			<a href="/Appathon/">My Cart</a> <a href="/Appathon/logout">Logout</a>
+			<a href="/Appathon/basket">My Cart</a>
+			<a href="/Appathon/logout">Logout</a>
 		</div>
 	</div>
 	<h1>Products</h1>
@@ -72,14 +72,13 @@
 					<div><%=rs.getDouble("price")%>
 						&euro;
 					</div>
-					<small>with VAT: <%=(int) (rs.getDouble("price") * 1.23)%>
+					<small>with VAT: <%= Math.round(rs.getDouble("price") * 1.23 * 100.0) / 100.0 %>
 						&euro;
 					</small>
 				</div>
 			</div>
 			<div class="card-action">
-				<button onclick="addToCart(<%=rs.getInt("id")%>)">Add to
-					cart</button>
+				<button onclick="addToCart(<%=rs.getInt("id")%>)">Add to cart</button>
 			</div>
 		</div>
 		<%
@@ -90,7 +89,7 @@
 		}
 	%>
 	<script type="text/javascript">
-		const addToCart = (id) => {
+		function addToCart(id) {
 			var oReq = new XMLHttpRequest();
 			oReq.open("POST", "/Appathon/products?productId=" + id);
 			oReq.send();

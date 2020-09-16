@@ -31,6 +31,14 @@
 		<servlet-name>products</servlet-name>
 		<jsp-file>/products.jsp</jsp-file>
 	</servlet>
+	<servlet>
+		<servlet-name>basket</servlet-name>
+		<jsp-file>/basket.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>countryvat</servlet-name>
+		<jsp-file>/countryvat.jsp</jsp-file>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>newuser</servlet-name>
@@ -55,5 +63,13 @@
 	<servlet-mapping>
 		<servlet-name>products</servlet-name>
 		<url-pattern>/products</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>basket</servlet-name>
+		<url-pattern>/basket</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>countryvat</servlet-name>
+		<url-pattern>/country-vat</url-pattern>
 	</servlet-mapping>
 </web-app>

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+table {
+	width: 100%;
+}
+
+tr {
+	background-color: #fafafa;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+tr:first-child {
+	background-color: #4B0082;
+	color: white;
+	pointer-events: none;
+	padding: 20px;
+}
+
+tr:last-child {
+	pointer-events: none;
+}
+
+tr:hover {
+	background-color: #ddd;
+}
+
+td, th {
+	width: 25%;
+}
+
+th {
+	padding: 10px 0;	
+}
+
+td {
+	padding: 15px 0;
+	text-align: center;
+}
+
+td img {
+	height: 80px;
+	display: block;
+	margin: auto;
+}
+
+div.total, div.vat, div.discount, div.final {
+	width: calc(25% - 20px);
+	margin-left: auto;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.discount-final {
+	color: red;
+}
+
+.card {
+	width: 500px;
+}
+
+.country-vat select {
+	width: 214px;
+}
+

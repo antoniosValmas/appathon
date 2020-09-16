@@ -41,7 +41,7 @@
 			<a href="/Appathon/products">Products</a>
 		</div>
 		<div class="user-navigation">
-			<a href="/Appathon/">My Cart</a>
+			<a href="/Appathon/basket">My Cart</a>
 			<a href="/Appathon/logout">Logout</a>
 		</div>
 	</div>
