@@ -1,8 +1,0 @@
-User admin submitted an order with 10 % vat
-They used the voucher studentdiscount for a 20 % discount
-Order Items:
-6x of product with id 1
-7x of product with id 2
-11x of product with id 3
-1x of product with id 4
-2x of product with id 5
