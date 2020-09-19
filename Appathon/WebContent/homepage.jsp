@@ -7,6 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Appathon - Homepage</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
 <link href="./styles/menu.css" rel="stylesheet" type="text/css">
 <link href="./styles/homepage.css" rel="stylesheet" type="text/css">

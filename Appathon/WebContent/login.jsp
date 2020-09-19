@@ -6,6 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <title>Appathon - Login</title>
 <%
 	Connection conn = DBService.getConnection();

@@ -15,6 +15,7 @@
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
 <link href="./styles/menu.css" rel="stylesheet" type="text/css">
 <link href="./styles/basket.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <%
 	Connection conn = DBService.getConnection();
 %>

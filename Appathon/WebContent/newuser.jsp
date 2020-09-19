@@ -7,6 +7,7 @@
 <html>
 <head>
 <link href="./styles/global.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta charset="ISO-8859-1">
 <title>Appathon - Registration</title>
 <%

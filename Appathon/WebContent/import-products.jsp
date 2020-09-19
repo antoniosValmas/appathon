@@ -9,6 +9,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <title>Appathon - Import products</title>
 <%
 	Connection conn = DBService.getConnection();
